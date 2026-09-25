@@ -1,0 +1,13 @@
+{
+  "project_name": "divyas-cakes",
+  "tech_stack": {
+    "framework": "Next.js",
+    "css": "Tailwind",
+    "host": "Cloudflare Pages"
+  },
+  "cta_targets": {
+    "whatsapp": "+44 7401 141694",
+    "phone": "+44 7401 141694"
+  },
+  "white_label_candidate": true
+}
