@@ -20,7 +20,7 @@ export default function Contact() {
                         Have a design in mind? <em className="font-normal text-rose-deep">Let’s make it.</em>
                     </h2>
                     <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-cocoa/70 sm:text-lg">
-                        Send a photo, a theme or just an idea. Divya will help you shape it and confirm your price.
+                        Send a photo, a theme or just an idea. We’ll help you shape it and confirm your price.
                     </p>
 
                     <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">

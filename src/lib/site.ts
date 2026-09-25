@@ -1,6 +1,9 @@
 export { WHATSAPP_NUMBER, COLLECTION_POSTCODE } from "@/lib/pricing";
 import { WHATSAPP_NUMBER } from "@/lib/pricing";
 
+// Live site address: used for SEO metadata, sitemap and robots.txt.
+export const SITE_URL = "https://divyascakes.com";
+
 export const PHONE_DISPLAY = "07401 141694";
 export const PHONE_TEL = "+447401141694";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;

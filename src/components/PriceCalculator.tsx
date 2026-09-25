@@ -238,7 +238,7 @@ export default function PriceCalculator() {
                     <SectionHeading
                         eyebrow="Instant price guide"
                         title={<>Design your cake, <em className="font-normal text-rose">see the price</em></>}
-                        intro="Tap your choices below and your estimate updates as you go. Happy with it? Send it straight to Divya on WhatsApp."
+                        intro="Tap your choices below and your estimate updates as you go. Happy with it? Send it straight to Zel Bakes on WhatsApp."
                     />
                 </div>
 

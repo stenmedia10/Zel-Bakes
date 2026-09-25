@@ -3,7 +3,7 @@ import { Heart, Palette, Sparkles } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 
 const VALUES = [
-    { icon: Heart, title: "Homemade", text: "Baked in Divya’s own kitchen, one order at a time." },
+    { icon: Heart, title: "Homemade", text: "Baked in our own home kitchen, one order at a time." },
     { icon: Palette, title: "Customised", text: "Your colours, theme, message and flavour. No two cakes alike." },
     { icon: Sparkles, title: "Detail-led", text: "From piped flowers to themed toppers, finished by hand." },
 ];
@@ -17,11 +17,11 @@ export default function About() {
                 <div className="reveal mx-auto w-full max-w-md lg:col-span-5">
                     <div className="relative px-6 text-blush/40">
                         <LogoBadge
-                            alt="Illustration of Divya with her whisk and a floral cake"
+                            alt="Zel Bakes illustration of a baker with a whisk and a floral cake"
                             sizes="(min-width: 1024px) 400px, 75vw"
                         />
                         <p className="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-rose px-5 py-2 font-serif text-lg italic text-white shadow-lg">
-                            Hi, I’m Divya
+                            Hello from Zel Bakes
                         </p>
                     </div>
                 </div>
@@ -29,16 +29,16 @@ export default function About() {
                 <div className="lg:col-span-7">
                     <SectionHeading
                         tone="dark"
-                        eyebrow="Meet the baker"
+                        eyebrow="Our story"
                         title={<>A home kitchen, <em className="font-normal text-rose">a lot of love</em></>}
                     />
                     <div className="reveal mt-6 max-w-2xl space-y-5 text-base leading-relaxed text-cream/75 sm:text-lg">
                         <p>
                             Zel Bakes began with a simple love for home baking. What started as time spent in the heart of
-                            Divya’s kitchen has grown into a real passion for creating edible art.
+                            a home kitchen has grown into a real passion for creating edible art.
                         </p>
                         <p>
-                            Divya specialises in custom theme cakes that are as individual as the people they’re made for, from
+                            Zel Bakes specialises in custom theme cakes that are as individual as the people they’re made for, from
                             delicate floral designs to playful characters. Every cake is a chance to turn your idea into
                             something that makes the day unforgettable, one slice at a time.
                         </p>

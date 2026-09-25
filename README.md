@@ -1,66 +1,49 @@
-# Divya's Cakes | Bespoke Artisan Portfolio
+# Zel Bakes
 
-A premium, high-performance bespoke cake portfolio for **Divya's**, built with Next.js 15, Tailwind CSS, and Framer Motion. This project features luxury aesthetics, interactive animations, and is optimized for mobile-first user experiences.
+Website for **Zel Bakes**, homemade custom celebration cakes in Kettering. Built with Next.js (static export), Tailwind CSS v4 and Motion.
 
-## 🌟 Key Features
+## Features
 
-- **Interactive Hero Section**: Sophisticated background transitions with mouse-follow effects and cinematic typography.
-- **Bespoke Gallery**: A responsive masonry grid showcasing handcrafted artisan creations.
-- **Micro-Atmosphere**: Subtle floating bokeh particles for enhanced visual depth.
-- **High-Conversion CTAs**: Mobile-optimized WhatsApp and Direct Call integration.
-- **SEO Optimized**: Advanced metadata, JSON-LD structured data (Bakery schema), and localized SEO for Kettering.
-- **Premium Navigation**: Glassmorphism header with a custom animated mobile menu.
+- **Instant price calculator.** Customers build a cake (size, flavour, shape, decoration, topper, extras) and see a live estimate. On mobile it's a guided step-by-step flow with a docked price bar.
+- **Quote sharing.** Send the quote on WhatsApp, or save it as a branded image or PDF.
+- **Gallery** with a keyboard- and swipe-friendly lightbox.
+- **Branded loading screen**, shown once per browser session.
+- Responsive images, SEO metadata, sitemap/robots, and accessible navigation.
 
-## 🛠️ Project Structure
+## Getting started
 
-```text
-/src
-  /app           # Next.js App Router (Layouts, Pages, Global CSS)
-    /sitemap.ts  # Dynamic SEO sitemap
-  /components    # React Components
-    /ui          # Reusable UI primitives (Buttons, Backgrounds)
-    Hero.tsx     # Hero section with interactive animations
-    Gallery.tsx  # Masonry grid portfolio
-    About.tsx    # Brand storytelling section
-    Contact.tsx  # Floating luxury CTAs
-    Header.tsx   # Responsive glassmorphism navigation
-  /lib           # Utility functions (cn, etc.)
-/public          # Static assets (Logo, Favicon, Images)
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # static site in out/
 ```
 
-## 🚀 Getting Started
+## Editing content
 
-### Local Development
+| What | Where |
+| --- | --- |
+| Prices, options, collection postcode, WhatsApp number | `src/lib/pricing.ts` |
+| Phone, hours, navigation, live site URL | `src/lib/site.ts` |
+| Gallery cakes and descriptions | `src/components/Gallery.tsx` |
+| Colours and fonts | `src/app/globals.css`, `src/app/layout.tsx` |
 
-1. **Clone & Install**:
-   ```bash
-   npm install
-   ```
+## Images
 
-2. **Run Dev Server**:
-   ```bash
-   npm run dev
-   ```
+Original photos live in `assets/`. After adding or replacing one, regenerate the web sizes (macOS):
 
-3. **Build Locally**:
-   ```bash
-   npm run build
-   ```
+```bash
+./scripts/optimize-images.sh
+```
 
-## ☁️ Cloudflare Pages Deployment
+This writes 160/480/800/1200px JPEGs to `public/img/`. Reference images in code as `/img/<name>.jpg`, and the custom loader (`src/lib/imageLoader.ts`) serves the right size for each device.
 
-This project is optimized for **Cloudflare Pages** using **Static Export** for maximum performance and reliability.
+## Project structure
 
-### 1. Configure Cloudflare Dashboard
-
-To fix the 404 error, ensure your project is configured with these exact settings in the Cloudflare Pages dashboard:
-
-- **Framework Preset**: `None` (or `Next.js`)
-- **Build Command**: `npm run build`
-- **Build Output Directory**: `out`
-
-### 2. Why Static Export?
-We have enabled `output: 'export'` in `next.config.ts`. This generates a strictly static version of the site in the `out` folder, which Cloudflare serves directly from its CDN. This is the fastest and most stable way to host a portfolio.
-
----
-© 2024 Divya's Cakes • Handcrafted in Kettering
+```text
+assets/          Original images (not deployed)
+public/img/      Generated responsive images
+scripts/         Image optimisation script
+src/app/         Layout, global styles, icons, sitemap/robots
+src/components/  Page sections (Hero, Gallery, About, HowItWorks, PriceCalculator, Contact, Footer…)
+src/lib/         Pricing, site settings, image loader, quote image renderer
+```

@@ -38,7 +38,7 @@ export default function Header() {
                 }`}
             >
                 <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-6 px-5 sm:px-8 lg:h-24">
-                    <a href="#top" className="flex items-center gap-3 rounded-full" aria-label="Zel Bakes by Divya, back to top">
+                    <a href="#top" className="flex items-center gap-3 rounded-full" aria-label="Zel Bakes, back to top">
                         <LogoMark className="size-16 lg:size-20" preload />
                         <Wordmark />
                     </a>

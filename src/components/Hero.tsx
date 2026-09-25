@@ -24,7 +24,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="mt-6 max-w-xl text-lg leading-relaxed text-cocoa/75">
-                        Custom birthday, christening and themed cakes, handmade by Divya. Design yours online, see the price
+                        Custom birthday, christening and themed cakes, made by hand for your celebration. Design yours online, see the price
                         instantly, and collect it fresh on the day.
                     </p>
 

@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="relative mx-auto max-w-7xl px-5 pt-16 sm:px-8 lg:pt-24">
                 <div className="grid gap-12 lg:grid-cols-12 lg:gap-10">
                     <div className="lg:col-span-5">
-                        <a href="#top" className="inline-flex items-center gap-4 rounded-full" aria-label="Zel Bakes by Divya, back to top">
+                        <a href="#top" className="inline-flex items-center gap-4 rounded-full" aria-label="Zel Bakes, back to top">
                             <LogoMark className="size-20 lg:size-24" sizes="96px" />
                             <Wordmark tone="dark" />
                         </a>
@@ -28,7 +28,7 @@ export default function Footer() {
                                 rel="noopener"
                                 className="inline-flex items-center justify-center gap-2 rounded-full bg-rose-deep px-6 py-3.5 font-semibold text-white transition hover:bg-rose"
                             >
-                                <MessageCircle size={18} /> WhatsApp Divya
+                                <MessageCircle size={18} /> WhatsApp us
                             </a>
                             <a
                                 href="#quote"
@@ -98,7 +98,7 @@ export default function Footer() {
                 </p>
 
                 <div className="flex flex-col items-center justify-between gap-4 border-t border-cream/10 py-7 text-center text-sm text-cream/50 sm:flex-row sm:text-left">
-                    <p>© {new Date().getFullYear()} Zel Bakes by Divya</p>
+                    <p>© {new Date().getFullYear()} Zel Bakes</p>
                     <a href="#top" className="inline-flex items-center gap-2 text-cream/70 transition-colors hover:text-rose">
                         Back to top <ArrowUp size={16} />
                     </a>

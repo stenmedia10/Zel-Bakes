@@ -106,7 +106,7 @@ export async function renderQuoteImage(q: QuoteData): Promise<HTMLCanvasElement>
     ctx.fillText("Zel Bakes", tx, 160);
     ctx.fillStyle = ROSE;
     ctx.font = `600 22px ${sans}`;
-    ctx.fillText("BY DIVYA  ·  CAKE QUOTE", tx, 205);
+    ctx.fillText("HOMEMADE  ·  CAKE QUOTE", tx, 205);
     ctx.fillStyle = "rgba(253,247,243,0.65)";
     ctx.font = `400 24px ${sans}`;
     ctx.fillText(`Ref ${q.ref}  ·  ${q.issued}`, tx, 250);

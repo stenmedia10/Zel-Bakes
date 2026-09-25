@@ -28,7 +28,7 @@ export function Wordmark({ tone = "light", tagline = true }: { tone?: "light" | 
             </span>
             {tagline && (
                 <span className={`mt-1 block text-[10px] font-semibold uppercase tracking-[0.3em] ${tone === "dark" ? "text-blush/70" : "text-rose-deep"}`}>
-                    by Divya
+                    Homemade cakes
                 </span>
             )}
         </span>
@@ -38,7 +38,7 @@ export function Wordmark({ tone = "light", tagline = true }: { tone?: "light" | 
 /** Full logo presented as a sticker: white rim, soft shadow and a slowly orbiting ring of sprinkles. */
 export function LogoBadge({
     sizes,
-    alt = "Zel Bakes by Divya logo",
+    alt = "Zel Bakes logo",
     className = "",
 }: {
     sizes: string;

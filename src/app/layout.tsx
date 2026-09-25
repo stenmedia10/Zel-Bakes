@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Preloader from "@/components/Preloader";
+import { SITE_URL } from "@/lib/site";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -15,22 +16,22 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://divyascakes.com"),
-  title: "Zel Bakes by Divya | Custom Celebration Cakes in Kettering",
-  description: "Homemade, fully customised celebration cakes baked with love by Divya in Kettering, Northamptonshire. Design your cake and get an instant price online.",
-  keywords: ["Zel Bakes", "Zel Bakes by Divya", "custom cakes Kettering", "birthday cakes Kettering", "themed cakes Northamptonshire", "homemade cakes Kettering", "cake price calculator"],
-  authors: [{ name: "Divya" }],
+  metadataBase: new URL(SITE_URL),
+  title: "Zel Bakes | Custom Celebration Cakes in Kettering",
+  description: "Homemade, fully customised celebration cakes baked with love in Kettering, Northamptonshire. Design your cake and get an instant price online.",
+  keywords: ["Zel Bakes", "Zel Bakes Kettering", "custom cakes Kettering", "birthday cakes Kettering", "themed cakes Northamptonshire", "homemade cakes Kettering", "cake price calculator"],
+  authors: [{ name: "Zel Bakes" }],
   openGraph: {
-    title: "Zel Bakes by Divya | Custom Celebration Cakes",
+    title: "Zel Bakes | Custom Celebration Cakes",
     description: "Homemade, customised cakes baked with love in Kettering. Design yours and get an instant price.",
-    url: "https://divyascakes.com",
+    url: SITE_URL,
     siteName: "Zel Bakes",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Zel Bakes by Divya — Baked with love, homemade, customised",
+        alt: "Zel Bakes — Baked with love, homemade, customised",
       },
     ],
     locale: "en_GB",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zel Bakes by Divya | Custom Celebration Cakes",
+    title: "Zel Bakes | Custom Celebration Cakes",
     description: "Homemade, customised cakes baked with love in Kettering.",
     images: ["/og-image.jpg"],
   },
@@ -72,10 +73,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Bakery",
-              "name": "Zel Bakes by Divya",
-              "image": "https://divyascakes.com/img/logo-1200.jpg",
-              "@id": "https://divyascakes.com",
-              "url": "https://divyascakes.com",
+              "name": "Zel Bakes",
+              "image": `${SITE_URL}/img/logo-1200.jpg`,
+              "@id": SITE_URL,
+              "url": SITE_URL,
               "telephone": "+447767123456",
               "address": {
                 "@type": "PostalAddress",

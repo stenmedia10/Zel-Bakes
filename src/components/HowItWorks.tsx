@@ -11,7 +11,7 @@ const STEPS = [
     {
         icon: MessageCircle,
         title: "Send it on WhatsApp",
-        text: "One tap sends your full quote to Divya, who confirms the design and your final price.",
+        text: "One tap sends your full quote to Zel Bakes. We confirm the design and your final price.",
     },
     {
         icon: ShoppingBag,

@@ -47,7 +47,7 @@ export default function Gallery() {
                     <SectionHeading
                         eyebrow="Recent bakes"
                         title={<>Every cake tells <em className="font-normal text-rose">someone’s story</em></>}
-                        intro="A few favourites from Divya’s kitchen. Tap any cake to take a closer look."
+                        intro="A few favourites from the Zel Bakes kitchen. Tap any cake to take a closer look."
                     />
                     <a href="#quote" className="reveal shrink-0 font-semibold text-rose-deep underline decoration-rose/40 underline-offset-8 hover:decoration-rose">
                         Price your own cake →
